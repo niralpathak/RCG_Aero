@@ -29,5 +29,32 @@ void serialEvent() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  
+   if (input_stringcomplete) {
+   myserial.print(inputstring);
+  inputstring = "";
+  input_stringcomplete = false;
+  }
+  if (myserial.available() > 0) {
+    char inchar = (char)myserial.read();
+    sensorstring += inchar;
+    if (inchar == '\r') {
+      sensor_stringcomplete = true;
+    }
+  }
+   if (sensor_stringcomplete) {
+  Serial.println(sensorstring);
+  ph = sensorstring.toFloat();
+  if (ph >= 7.0) {
+    Serial.println("high");
+  }
+  if (ph <= 6.999) {
+    Serial.println("low");
+  }
+  sensorstring = "";
+  sensor_stringcomplete = false;
+ }
 }
+
+
+
+
