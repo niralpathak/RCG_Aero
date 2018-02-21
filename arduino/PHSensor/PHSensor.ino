@@ -2,6 +2,7 @@
 #define rx 2
 #define tx 3 
 
+
 SoftwareSerial myserial(rx, tx); 
 
 String inputstring = "";
