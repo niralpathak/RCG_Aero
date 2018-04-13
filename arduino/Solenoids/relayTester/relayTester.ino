@@ -10,6 +10,7 @@
 #define RELAY_7 6 
 #define RELAY_8 5 
 
+#define DELAY 1000*1.5
 
 void setup() {
   // put your setup code here, to run once:
@@ -31,18 +32,32 @@ void setup() {
   pinMode(RELAY_7, OUTPUT);
   pinMode(RELAY_8, OUTPUT);
 
-
-
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
   digitalWrite(RELAY_1, RELAY_ON); 
-  delay(1000); 
+  delay(DELAY); 
   digitalWrite(RELAY_1, RELAY_OFF); 
-  delay(1000); 
-
-
-  
-
+  digitalWrite(RELAY_2, RELAY_ON); 
+  delay(DELAY); 
+  digitalWrite(RELAY_2, RELAY_OFF); 
+  digitalWrite(RELAY_3, RELAY_ON); 
+  delay(DELAY); 
+  digitalWrite(RELAY_3, RELAY_OFF); 
+  digitalWrite(RELAY_4, RELAY_ON); 
+  delay(DELAY); 
+  digitalWrite(RELAY_4, RELAY_OFF); 
+  digitalWrite(RELAY_5, RELAY_ON); 
+  delay(DELAY); 
+  digitalWrite(RELAY_5, RELAY_OFF); 
+  digitalWrite(RELAY_6, RELAY_ON); 
+  delay(DELAY); 
+  digitalWrite(RELAY_6, RELAY_OFF); 
+  digitalWrite(RELAY_7, RELAY_ON); 
+  delay(DELAY); 
+  digitalWrite(RELAY_7, RELAY_OFF); 
+  digitalWrite(RELAY_8, RELAY_ON); 
+  delay(DELAY); 
+  digitalWrite(RELAY_8, RELAY_OFF); 
 }
