@@ -1,14 +1,14 @@
 #define RELAY_ON 0 
 #define RELAY_OFF 1
 
-#define RELAY_1 12 
-#define RELAY_2 11 
-#define RELAY_3 10 
-#define RELAY_4 9 
-#define RELAY_5 8 
-#define RELAY_6 7 
-#define RELAY_7 6 
-#define RELAY_8 5 
+#define RELAY_8 12 
+#define RELAY_7 11 
+#define RELAY_6 10 
+#define RELAY_5 9 
+#define RELAY_4 8 
+#define RELAY_3 7 
+#define RELAY_2 6 
+#define RELAY_1 5 
 
 #define DELAY 1000*1.5
 
