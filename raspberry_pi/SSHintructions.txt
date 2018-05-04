@@ -1,1 +1,1 @@
-$ssh pi@raspberrypi.local
+ssh pi@raspberrypi.local
